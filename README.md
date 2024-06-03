@@ -19,4 +19,7 @@ For deploying via CD, a docker-compose file will be more appropriate. Exact conf
 
 If more time allows, I will try to add some component tests.
 
-The database included as part of the git repository is an empty file. However, the default SQLite database should work if it were to overwrite src/SimplyWallSt/sws.sqlite3 
+The database included as part of the git repository is an empty file. However, the default SQLite database should work if it were to overwrite src/SimplyWallSt/sws.sqlite3
+
+Screenshot of generated swagger interface:
+![Screenshot of generated swagger interface](doc/exampleSS.png)
