@@ -1,2 +1,11 @@
 # SimplyWallSt
 Simplywall.st challenge
+
+# Assumptions
+The challenge was tackled with the following assumptions:
+
+* Changes to the provided SQLite database was avoided for ease of testing and compatibility with any alternate databases that the challenge's assessor may swap in. However, if changes to the SQLite database was allowed, I would like to have created a new table "swsCompanyVolatility" as a way of avoiding computing the volatility (variance) of stocks which would make the search query more efficient.
+* As such, I have assumed for the purpose of this exercise that joins are allowed on the database. If changes would have been allowed on the database, I would perhaps have used a new swsCompanyVolatility table to query for volatility instead, this would avoid running an expensive query such as the one I included in DirectCompanyRepository.cs.
+* My design, were this to be an actual production ready system would be to use an elastic search cluster with replicated data to more easily index and search according to the criteria. The elastic search cluster can be populated by a processor that subscribes to a kafka stream that receives data from the CDC output of a real database. This design will mean we can avoid joins and minimize index updating (when writing) on these tables while still providing efficiently searchable up-to-date data to the customer.
+* Depending on the write cadence, a cache may be applicable for storing price data or score data. This enables looking up "last known price" without having to hit the database (or the ES cluster for that matter). Cache invalidation may be implemented if more up-to-date data is required. Currently, I've used memory cache to implement a simple LRU cache as a proof of concept.
+* I have made certain assumptions on the validity of the data. Namely that each company must necessarily have at least one past price and a score. If the assumption is false, more error handling/sanity testing need to be added.
