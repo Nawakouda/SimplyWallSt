@@ -9,3 +9,14 @@ The challenge was tackled with the following assumptions:
 * My design, were this to be an actual production ready system would be to use an elastic search cluster with replicated data to more easily index and search according to the criteria. The elastic search cluster can be populated by a processor that subscribes to a kafka stream that receives data from the CDC output of a real database. This design will mean we can avoid joins and minimize index updating (when writing) on these tables while still providing efficiently searchable up-to-date data to the customer.
 * Depending on the write cadence, a cache may be applicable for storing price data or score data. This enables looking up "last known price" without having to hit the database (or the ES cluster for that matter). Cache invalidation may be implemented if more up-to-date data is required. Currently, I've used memory cache to implement a simple LRU cache as a proof of concept.
 * I have made certain assumptions on the validity of the data. Namely that each company must necessarily have at least one past price and a score. If the assumption is false, more error handling/sanity testing need to be added.
+
+# Instructions to run
+Solution has been tested on IISExpress as well as a Linux docker container. However, it has only been tested on a windows build environment.
+
+To run, install Visual Studio (Community edition is fine) and Docker for Windows. It should be able to run by hitting Run within the IDE.
+
+For deploying via CD, a docker-compose file will be more appropriate. Exact configuration will depend on what CI/CD tool it is being integrated with.
+
+If more time allows, I will try to add some component tests.
+
+The database included as part of the git repository is an empty file. However, the default SQLite database should work if it were to overwrite src/SimplyWallSt/sws.sqlite3 

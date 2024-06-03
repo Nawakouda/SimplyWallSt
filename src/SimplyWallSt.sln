@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplyWallSt", "SimplyWallSt\SimplyWallSt.csproj", "{B1C0A92F-FA45-4CE4-98DC-5A55D8C2115D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplyWallSt.Listing.Repository", "SimplyWallSt.Listing.Repository\SimplyWallSt.Listing.Repository.csproj", "{410D7E78-11DA-49D4-81F3-2C53DBDEF851}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1C0A92F-FA45-4CE4-98DC-5A55D8C2115D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C0A92F-FA45-4CE4-98DC-5A55D8C2115D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C0A92F-FA45-4CE4-98DC-5A55D8C2115D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C0A92F-FA45-4CE4-98DC-5A55D8C2115D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410D7E78-11DA-49D4-81F3-2C53DBDEF851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410D7E78-11DA-49D4-81F3-2C53DBDEF851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410D7E78-11DA-49D4-81F3-2C53DBDEF851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410D7E78-11DA-49D4-81F3-2C53DBDEF851}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {845F2099-2584-4D59-A861-FF9E9C9CFA62}
+	EndGlobalSection
+EndGlobal

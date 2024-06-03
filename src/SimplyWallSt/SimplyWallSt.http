@@ -1,0 +1,6 @@
+@SimplyWallSt_HostAddress = http://localhost:5264
+
+GET {{SimplyWallSt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
