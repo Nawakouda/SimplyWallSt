@@ -18,4 +18,7 @@ To run, install Visual Studio (Community edition is fine) and Docker for Windows
 
 For deploying via CD, a docker-compose file will be more appropriate. Exact configuration will depend on what CI/CD tool it is being integrated with.
 
-The database included as part of the git repository is an empty file. However, the default SQLite database should work if it were to overwrite src/SimplyWallSt/sws.sqlite3 
+The database included as part of the git repository is an empty file. However, the default SQLite database should work if it were to overwrite src/SimplyWallSt/sws.sqlite3
+
+Screenshot of generated swagger interface:
+![Screenshot of generated swagger interface](doc/exampleSS.png)
