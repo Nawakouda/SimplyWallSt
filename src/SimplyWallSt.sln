@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplyWallSt", "SimplyWallS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplyWallSt.Listing.Repository", "SimplyWallSt.Listing.Repository\SimplyWallSt.Listing.Repository.csproj", "{410D7E78-11DA-49D4-81F3-2C53DBDEF851}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplyWallSt.Tests", "SimplyWallSt.Tests\SimplyWallSt.Tests.csproj", "{51BA3977-DA7B-4851-806B-8D31372C3A58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{410D7E78-11DA-49D4-81F3-2C53DBDEF851}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{410D7E78-11DA-49D4-81F3-2C53DBDEF851}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{410D7E78-11DA-49D4-81F3-2C53DBDEF851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51BA3977-DA7B-4851-806B-8D31372C3A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51BA3977-DA7B-4851-806B-8D31372C3A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51BA3977-DA7B-4851-806B-8D31372C3A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51BA3977-DA7B-4851-806B-8D31372C3A58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
