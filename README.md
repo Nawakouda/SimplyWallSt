@@ -1,8 +1,8 @@
 # SimplyWallSt
 Simplywall.st challenge
 
-# Assumptions
-The challenge was tackled with the following assumptions:
+# Assumptions and Explanations
+The challenge was tackled with the following context:
 
 * Changes to the provided SQLite database was avoided for ease of testing and compatibility with any alternate databases that the challenge's assessor may swap in. However, if changes to the SQLite database was allowed, I would like to have created a new table "swsCompanyVolatility" as a way of avoiding computing the volatility (variance) of stocks which would make the search query more efficient.
 * As such, I have assumed for the purpose of this exercise that joins are allowed on the database. If changes would have been allowed on the database, I would perhaps have used a new swsCompanyVolatility table to query for volatility instead, this would avoid running an expensive query such as the one I included in DirectCompanyRepository.cs.
